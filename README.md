@@ -1,38 +1,82 @@
-# Distill post--example
+**This is a curated list of safe RL papers from 2017 to 2022. If you would like to contribute additional papers or update the list, please feel free to do so.**
 
-Distill articles depend on [distillpub/template](https://github.com/distillpub/template) for styling and some functionality such as footnotes, citations, and math rendering. We built template as a standalone library of styles and [webcomponents](https://www.webcomponents.org/) to allow you to use any web development workflow you'd like. But what if you don't have strong opinions about that and just want a starter kit that works out of the box? This is such a starter kit.
+## Our Journey of Reimplementing Safe RL Algorithms
 
-This is using `webpack` for bundling, `svelte` & `svelte-loader` to build interactive components/diagrams, and `ejs` to inline SVGs—the same technology choices we used when building ambitious articles such as [Building Blocks of Interpretability](https://distill.pub/2018/building-blocks).
+Reimplementing state-of-the-art RL algorithms allows us to gain a deeper understanding of the algorithms' inner workings, and subsequently, explore novel and innovative approaches. [Safe Reinforcement Learning](https://rongrg.github.io/posts/2023-04-12-saferl/) is a cutting-edge field that holds immense potential for real-world applications. 
 
-## Get started
+During the course ["Advanced Topics in Reinforcement Learning"](https://rongrg.github.io/teaching/2022-winter-teaching-4/), we took on the challenge of reimplementing ideas from several recent safe RL papers.
 
-Fork and rename, or simply copy this repository.
+Our findings and discussions are available as scientific blogs, 
+with code re-implementations available on our GitHub repository (https://github.com/Safe-RL-Team).
 
-### First time setup
+Join us on an exciting journey of advancing the field of Safe RL! 
 
-- [ ] Clone your fork or copy of this repository: `git clone …`
-- [ ] [Install `npm` (Node Packet Manager)](https://docs.npmjs.com/getting-started/installing-node#installing-npm-from-the-nodejs-site). If you're on a Mac and have `brew`: `brew install node` will do the job.
-- [ ] `cd post--example` into the root directory of this project.
-- [ ] `npm install` to install dependencies.
-- [ ] Execute `npm run dev` to run a development server that autoreloads when you make changes to the article ("hot-reloading"). The console output will link you to a hot-reloading preview of the article.
-- [ ] Your article text is in `src/index.ejs`.
-- [ ] Your article metadata is in a tag called `distill-frontmatter` in the same (`src/index.ejs`) file. It contains a password field, which you should customize or remove while you're working oon the article.
+1. [Safe Reinforcement Learning via Curriculum Induction](https://arxiv.org/pdf/2006.12136.pdf), Matteo Turchetta, Andrey Kolobov, Shital Shah, Andreas Krause, and Alekh Agarwal
 
-Components and diagrams are stored in `src`. The `.html` files are [svelte](https://svelte.technology/guide) components, the `.js` files are compilation endpoints that are also defined in `webpack.config.js`. These compiled endpoints are then consumed by hand authored `.ejs` files in `src`, such as `index.ejs` which contains your content. For most articles you can simply use the provided `index.ejs` for your text, `index.js` to instantiate diagrams, and `.html` svelte files to create them.
+    📚 [Blog](https://safe-rl-team.github.io/curriculum-learning/) Marvin Sextro, Jonas Loos
 
-## Submitting to Distill
+2. [Safe Reinforcement Learning with Natural Language Constraints](https://proceedings.neurips.cc/paper/2021/file/72f67e70f6b7cdc4cc893edaddf0c4c6-Paper.pdf), Tsung-Yen Yang, Michael Hu, Yinlam Chow, Peter J. Ramadge, and Karthik Narasimhan, NeurIPS 2021
 
-You can find detailed information on submitting to Distill [on the journal website](https://distill.pub/journal/). As part of the review process you may be asked to share a version of your submission with reviewers. To give Distill read access to build and host your submission, please add the Github user `distillpub-reviewers` to your repository. Within around a day a member of the editorial staff will accept the invite, which will allow us to host your article (unlisted) on `drafts.distill.pub` and share it with reviewers on your behalf.
+    📚 [Blog](https://safe-rl-team.github.io/SRL-NLC-Report/)   Hongyou Zhou
 
-If your repository is hosted by an **organization account**, you can give `distillpub-reviewers` admin access and it will automatically install webhooks that trigger a redeploy when you push changes. 
+3. [Adversarial Policies: Attacking Deep Reinforcement Learning](https://openreview.net/pdf?id=HJgEMpVFwB), Adam Gleave, Michael Dennis, Cody Wild, Neel Kant, Sergey Levine, and Stuart Russell, ICLR 2020
 
-If repository is hosted by a **personal account** for your repository, drafts will attempt to rebuild your submission once a day. Alternatively you can contact Distill to ask for a repository under the `distillpub` Github organization.
+    📚 [Blog](https://safe-rl-team.github.io/adversarial-policies-pytorch-blog/)   Lorenz Hufe, Jarek Liesen
 
-Additional information and first troubleshooting steps are [listed in the `drafts` repository's README](https://github.com/distillpub/drafts). You can also get in touch with the editorial team for help via email, or [on the Distill Community Slack workspace](https://join.slack.com/t/distillpub/shared_invite/enQtMzg1NzU3MzEzMTg3LWJkNmQ4Y2JlNjJkNDlhYTU2ZmQxMGFkM2NiMTI2NGVjNzJkOTdjNTFiOGZmNDBjNTEzZGUwM2U0Mzg4NDAyN2E).
+4. [Reward constrained policy optimization](https://openreview.net/pdf?id=SkfrvsA9FX), Chen Tessler, Daniel J. Mankowitz, and Shie Mannor, ICLR 2019
+
+    📚 [Blog](https://iclr-blogposts.github.io/staging/blog/2023/Adaptive-Reward-Penalty-in-Safe-Reinforcement-Learning/)   Boris Meinardus, Tuan Anh Le
+
+5. [Constrained Policy Optimization via Bayesian World Models](https://arxiv.org/pdf/2201.09802.pdf), Yarden As, Ilnura Usmanova, Sebastian Curi and Andreas Krause, ICLR 2022
+
+    📚 [Blog](https://safe-rl-team.github.io/lambda-bo-blog/)   Vincent Meilinger
+
+6. [Constrained Policy Optimization](http://proceedings.mlr.press/v70/achiam17a/achiam17a.pdf), Joshua Achiam, David Held, Aviv Tamar, and Pieter Abbeel, ICML 2017
+
+    📚 [Blog](https://safe-rl-team.github.io/CPO-Blog/)   Thanh Cuong Le, Paul Hasenbusch
+
+7. [Responsive Safety in Reinforcement Learning by PID Lagrangian Methods Adam](http://proceedings.mlr.press/v119/stooke20a/stooke20a.pdf), Adam Stooke, Joshua Achiam, and Pieter Abbeel, ICML 2020
+
+    📚 [Blog](https://safe-rl-team.github.io/PID/)   Wenxi Huang
+
+8. [There Is No Turning Back: A Self-Supervised Approach for Reversibility-Aware Reinforcement Learning](https://openreview.net/pdf?id=3X65eaS4PtP), Nathan Grinsztajn, Johan Ferret, Olivier Pietquin, Philippe Preux, and Matthieu Geist, NeurIPS 2021
+
+    📚 [Blog](https://safe-rl-team.github.io/Blog-Post-about-There-is-No-Turning-Back/There%20is%20No%20Turning%20Back%20A%20Self-Supervised%20Approach%20for%20Reversibility-Aware%20Reinforcement%20Learning.html)   Malik-Manel Hashim
+
+9. [Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble](https://proceedings.neurips.cc/paper/2021/file/3d3d286a8d153a4a58156d0e02d8570c-Paper.pdf), Gaon An, Seungyong Moon, Jang-Hyun Kim, and Hyun Oh Song, NeurIPS 2021
+
+    📚 [Blog](https://safe-rl-team.github.io/Uncertainty-Based-Offline-RL-with-Diversified-Q-Ensemble/)   Jonas Loos, Julian Dralle
+
+10. [Learning Barrier Certificates: Towards Safe Reinforcement Learning with Zero Training-time Violations](https://openreview.net/pdf?id=K4Su8BIivap), Yuping Luo, and Tengyu Ma, NeurIPS 2021
+
+    📚 [Blog](https://safe-rl-team.github.io/barrier-certificates/)   Lars Chen, Jeremiah Flannery
+
+11. [Teachable Reinforcement Learning via Advice Distillation](https://proceedings.neurips.cc/paper/2021/file/37cfff3c04f95b22bcf166df586cd7a9-Paper.pdf), Olivia Watkins, Trevor Darrell, Pieter Abbeel, Jacob Andreas, and Abhishek Gupta, NeurIPS 2021
+
+    📚 [Blog](https://safe-rl-team.github.io/advice-distillation-blog/)   Mihai Dumitrescu, Claire Sturgill
+
+12. [Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings](http://proceedings.mlr.press/v119/zhang20e/zhang20e.pdf), Jesse Zhang, Brian Cheung, Chelsea Finn, Sergey Levine, and Dinesh Jayaraman, ICML 2020
+
+    📚 [Blog](https://safe-rl-team.github.io/CARL/)   Maren Eberle
+
+13. [Verifiable Reinforcement Learning via Policy Extraction](https://arxiv.org/pdf/1805.08328.pdf), Osbert Bastani, Yewen Pu, and Armando Solar-Lezama, NeurIPS 2018
+
+    📚 [Blog](https://safe-rl-team.github.io/viper-verifiable-reinforcement-learning/)   Christoph Pröschel
+
+14. [Time Discretization-Invariant Safe Action Repetition for Policy Gradient Methods](https://proceedings.neurips.cc/paper/2021/file/024677efb8e4aee2eaeef17b54695bbe-Paper.pdf), Seohong Park, Jaekyeom Kim, and Gunhee Kim, NeurIPS 2021
+
+    📚 [Blog](https://safe-rl-team.github.io/safe-action-repetition-article/)   Hristo Boyadzhiev
 
 
-## Feedback
+## Pushing Boundaries and Prioritizing Safety in RL
 
-This is a new template, and we don't yet have a lot of documentation on it. Please bear with us while we work to improve it!
+By implementing and exploring ideas from state-of-the-art papers, we can push the boundaries of what is possible 
+and pave the way for even more effective and robust safe RL algorithms. 
 
-Please [join our Distill Community Slack workspace](https://join.slack.com/t/distillpub/shared_invite/enQtMzg1NzU3MzEzMTg3LWJkNmQ4Y2JlNjJkNDlhYTU2ZmQxMGFkM2NiMTI2NGVjNzJkOTdjNTFiOGZmNDBjNTEzZGUwM2U0Mzg4NDAyN2E) if you have any questions. [Open an issue](https://github.com/distillpub/post--example/issues) if you'd like to see something improved!
+So, let's dive in and make the world a safer place, one policy at a time!
+
+
+## Reference
+1. [García, J. and Fernandez, F., A Comprehensive Survey on Safe Reinforcement Learning *Journal of Machine Learning Research, 2015*](https://www.jmlr.org/papers/volume16/garcia15a/garcia15a.pdf)
+2. [Ray, A., Achiam, J. and Amodei, D., Benchmarking Safe Exploration in Deep Reinforcement Learning *Open AI, 2019*](https://cdn.openai.com/safexp-short.pdf)
+3. [Kumar, A. and Levine, S, Offline Reinforcement Learning: From Algorithms to Practical Challenges *NeurIPS Tutorial 2020*](https://sites.google.com/view/offlinerltutorial-neurips2020/home?authuser=0)
