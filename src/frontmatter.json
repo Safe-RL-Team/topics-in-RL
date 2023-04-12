@@ -1,0 +1,26 @@
+{
+	"title": "Safe Reinforcement Learning",
+	"description": "An interactive introduction to safe reinforcement learning",
+	"authors": [
+		{
+			"author": "Rong Guo",
+			"authorURL": "https://rongrg.github.io//",
+			"affiliation": "TU Berlin",
+			"affiliationURL": "https://www.ni.tu-berlin.de/menue/neural_information_processing_group/"
+		}
+	],
+	"katex": {
+		"delimiters": [
+			{
+				"left": "$",
+				"right": "$",
+				"display": false
+			},
+			{
+				"left": "$$",
+				"right": "$$",
+				"display": true
+			}
+		]
+	}
+}

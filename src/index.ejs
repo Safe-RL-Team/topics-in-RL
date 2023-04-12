@@ -1,0 +1,396 @@
+<!doctype html>
+
+<head>
+  <title>Safe Reinforcement Learning</title>
+  <meta charset="utf-8">
+  <meta name="description" content="An Summary of Our Course During the
+  <i> Seminar Advanced Topics in Reinforcement Learning at TU Berlin</i>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Safe, Reinforcement, Learning, Risk-averse, Exploration">
+  <style id="distill-article-specific-styles">
+    <%=require("../static/styles.css") %>
+  </style>
+  <script src="https://distill.pub/template.v2.js"></script>
+</head>
+
+<body>
+
+  <d-front-matter>
+    <script type="text/json">
+      <%= JSON.stringify(require("./frontmatter.json"), null, 4) %>
+    </script>
+  </d-front-matter>
+
+  <d-title>
+    <h1>Safe Reinforcement Learning</h1>
+    <p>A compilation of recent machine learning papers focused on safe reinforcement learning,
+        currently spanning from 2017 to 2022.
+        If you would like to contribute additional papers or update the list,
+        please feel free to do so on the our <a href="https://github.com/Safe-RL-Team/topics-in-RL">
+          <b>Safe-RL GitHub page</b></a>.
+    </p>
+  </d-title>
+
+  <d-byline></d-byline>
+
+  <d-article id="main-article">
+
+    <ol type = "1">
+        <% /* */ %>
+      <li>
+          <a href="https://arxiv.org/pdf/2006.12136.pdf">
+          <b>Safe Reinforcement Learning via Curriculum Induction</b></a>,
+          Matteo Turchetta, Andrey Kolobov, Shital Shah, Andreas Krause, and Alekh Agarwal, <i>NeurIPS 2020</i
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/72f67e70f6b7cdc4cc893edaddf0c4c6-Paper.pdf">
+              <b>Safe Reinforcement Learning with Natural Language Constraints</b></a>,
+          Tsung-Yen Yang, Michael Hu, Yinlam Chow, Peter J. Ramadge, and Karthik Narasimhan, <i>NeurIPS 2021</i>
+
+
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=HJgEMpVFwB">
+              <b>Adversarial Policies: Attacking Deep Reinforcement Learning</b></a>,
+          Adam Gleave, Michael Dennis, Cody Wild, Neel Kant, Sergey Levine, and Stuart Russell, <i>ICLR 2020</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=SkfrvsA9FX">
+            <b>Reward constrained policy optimization</b></a>,
+          Chen Tessler, Daniel J. Mankowitz, and Shie Mannor, <i>ICLR 2019</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/73b277c11266681122132d024f53a75b-Paper.pdf">
+              <b>Safe Reinforcement Learning by Imagining the Near Future</b></a>,
+          Garrett Thomas, Yuping Luo, and Tengyu Ma, <i>NeurIPS 2021</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+        <a href="https://arxiv.org/pdf/2201.09802.pdf">
+            <b>Constrained Policy Optimization via Bayesian World Models</b></a>,
+          Yarden As, Ilnura Usmanova, Sebastian Curi and Andreas Krause, <i>ICLR 2022</i>
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+        <a href="http://proceedings.mlr.press/v70/achiam17a/achiam17a.pdf">
+            <b>Constrained Policy Optimization</b></a>,
+          Joshua Achiam, David Held, Aviv Tamar, and Pieter Abbeel, <i>ICML 2017</i>
+         
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+        <a href="http://proceedings.mlr.press/v119/stooke20a/stooke20a.pdf">
+            <b>Responsive Safety in Reinforcement Learning by PID Lagrangian Methods Adam</b></a>,
+          Adam Stooke, Joshua Achiam, and Pieter Abbeel, <i>ICML 2020</i>
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=3X65eaS4PtP">
+              <b>There Is No Turning Back: A Self-Supervised Approach for Reversibility-Aware Reinforcement Learning</b></a>,
+          Nathan Grinsztajn, Johan Ferret, Olivier Pietquin, Philippe Preux, and Matthieu Geist, <i>NeurIPS 2021</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/3d3d286a8d153a4a58156d0e02d8570c-Paper.pdf">
+              <b>Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble</b></a>,
+          Gaon An, Seungyong Moon, Jang-Hyun Kim, and Hyun Oh Song, <i>NeurIPS 2021</i>
+          
+      </li>
+
+         <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=K4Su8BIivap">
+              <b>Learning Barrier Certificates: Towards Safe Reinforcement Learning with Zero Training-time Violations</b></a>,
+          Yuping Luo, and Tengyu Ma, <i>NeurIPS 2021</i>
+         
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/37cfff3c04f95b22bcf166df586cd7a9-Paper.pdf">
+              <b>Teachable Reinforcement Learning via Advice Distillation</b></a>,
+          Olivia Watkins, Trevor Darrell, Pieter Abbeel, Jacob Andreas, and Abhishek Gupta, <i>NeurIPS 2021</i>
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="http://proceedings.mlr.press/v119/zhang20e/zhang20e.pdf">
+              <b>Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings</b></a>,
+          Jesse Zhang, Brian Cheung, Chelsea Finn, Sergey Levine, and Dinesh Jayaraman, <i>ICML 2020</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://arxiv.org/pdf/1805.08328.pdf">
+              <b>Verifiable Reinforcement Learning via Policy Extraction</b></a>,
+          Osbert Bastani, Yewen Pu, and Armando Solar-Lezama, <i>NeurIPS 2018</i>
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/024677efb8e4aee2eaeef17b54695bbe-Paper.pdf">
+              <b>Time Discretization-Invariant Safe Action Repetition for Policy Gradient Methods</b></a>,
+          Seohong Park, Jaekyeom Kim, and Gunhee Kim, <i>NeurIPS 2021</i>
+         
+      </li>
+
+        <% /* */ %>
+      <li>
+        <a href="https://openreview.net/pdf?id=TBIzh9b5eaz">
+            <b>Risk-averse Offline Reinforcement Learning</b></a>,
+          Núria Armengol Urpí, Sebastian Curi, and Andreas Krause, <i>ICLR 2021</i>
+         
+      </li>
+
+         <% /* */ %>
+      <li>
+          <a href="http://proceedings.mlr.press/v97/cobbe19a/cobbe19a.pdf">
+              <b>Quantifying Generalization in Reinforcement Learning</b></a>,
+          Karl Cobbe, Oleg Klimov, Chris Hesse, Taehoon Kim, and John Schulman, <i>ICML 2019</i>
+          
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://papers.nips.cc/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf">
+              <b>Deep Reinforcement Learning from Human Preferences</b></a>,
+          Paul F Christiano, Jan Leike, Tom B Brown, Miljan Martic, Shane Legg, and Dario Amodei, <i>NeurIPS 2017</i>
+         
+      </li>
+
+
+      <li>
+        <a href="https://proceedings.neurips.cc/paper/2018/file/4fe5149039b52765bde64beb9f674940-Paper.pdf">
+            <b>A Lyapunov-based Approach to Safe Reinforcement Learning</b></a>,
+          Yinlam Chow, Ofir Nachum, Edgar Duenez-Guzman, and Mohammad Ghavamzadeh, <i>NeurIPS 2018</i>
+      </li>
+
+      <li>
+        <a href="https://openreview.net/pdf?id=SJgUYBVLsN">
+            <b>Lyapunov-based Safe Policy Optimization for Continuous Control</b></a>,
+          Yinlam Chow, Ofir Nachum, Aleksandra Faust, Edgar Duenez-Guzman, and Mohammad Ghavamzadeh, <i>RL4RealLife Workshop in ICML 2019</i>
+      </li>
+
+
+      <li>
+        <a href="https://arxiv.org/pdf/2201.11927.pdf">
+            <b>Constrained Variational Policy Optimization for Safe Reinforcement Learning</b></a>,
+          Zuxin Liu, Zhepeng Cen, Vladislav Isenbaev, Wei Liu, Zhiwei Steven Wu, Bo Li, and Ding Zhao, <i>ICML 2022</i>
+      </li>
+
+
+      <% /* */ %>
+      <li>
+          <a href="http://proceedings.mlr.press/v139/amani21a/amani21a.pdf">
+              <b>Safe Reinforcement Learning with Linear Function Approximation</b></a>,
+          Sanae Amani, Christos Thrampoulidis, and Lin F. Yang, <i>ICML 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="">
+              <b>Reachability Constrained Reinforcement Learning</b></a>,
+          Dongjie Yu, Haitong Ma, Shengbo Eben Li, and Jianyu Chen, <i>ICML 2022</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="http://proceedings.mlr.press/v119/zhang20e/zhang20e.pdf">
+              <b>Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings</b></a>,
+          Jesse Zhang, Brian Cheung, Chelsea Finn, Sergey Levine, and Dinesh Jayaraman, <i>ICML 2020</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2020/file/af5d5ef24881f3c3049a7b9bfe74d58b-Paper.pdf">
+              <b>First Order Constrained Optimization in Policy Space</b></a>,
+          Yiming Zhang, Quan Vuong, and Keith W. Ross, <i>NeurIPS 2020</i>
+      </li>
+
+
+      <% /* */ %>
+      <li>
+          <a href="https://papers.nips.cc/paper/2021/file/adf7e293599134777339fdc40ddfa818-Paper.pdf">
+              <b>Safe Policy Optimization with Local Generalized Linear Function Approximations</b></a>,
+          Akifumi Wachi,Yunyue Wei, and Yanan Sui, <i>NeurIPS 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2017/file/766ebcd59621e305170616ba3d3dac32-Paper.pdf">
+              <b>Safe Model-based Reinforcement Learning with Stability Guarantees</b></a>,
+          Felix Berkenkamp, Matteo Turchetta, Angela P. Schoellig, and Andreas Krause, <i>NeurIPS 2017</i>
+      </li>
+
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2020/file/448d5eda79895153938a8431919f4c9f-Paper.pdf">
+              <b>Neurosymbolic Reinforcement Learning with Formally Verified Exploration</b></a>,
+          Greg Anderson, Abhinav Verma, Isil Dillig, and Swarat Chaudhuri, <i>NeurIPS 2020</i>
+      </li>
+
+
+      <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=Z2vksUFuVst">
+              <b>Conservative Offline Distributional Reinforcement Learning</b></a>,
+          Yecheng Jason Ma, Dinesh Jayaraman, and Osbert Bastani, <i>NeurIPS 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/5da713a690c067105aeb2fae32403405-Paper.pdf">
+              <b>Continuous Doubly Constrained Batch Reinforcement Learning</b></a>,
+          Rasool Fakoor, Jonas Mueller, Kavosh Asadi, Pratik Chaudhari, and Alexander J. Smola, <i>NeurIPS 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/90610aa0e24f63ec6d2637e06f9b9af2-Paper.pdf">
+              <b>Risk-Aware Transfer in Reinforcement Learning using Successor Features</b></a>,
+          Michael Gimelfarb, André Barreto, Scott Sanner, and Chi-Guhn Lee, <i>NeurIPS 2021</i>
+      </li>
+
+
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2021/file/37cfff3c04f95b22bcf166df586cd7a9-Paper.pdf">
+              <b>Teachable Reinforcement Learning via Advice Distillation</b></a>,
+          Olivia Watkins, Trevor Darrell, Pieter Abbeel, Jacob Andreas, and Abhishek Gupta, <i>NeurIPS 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=3X65eaS4PtP">
+              <b>There Is No Turning Back: A Self-Supervised Approach for Reversibility-Aware Reinforcement Learning</b></a>,
+          Nathan Grinsztajn, Johan Ferret, Olivier Pietquin, Philippe Preux, and Matthieu Geist, <i>NeurIPS 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2020/file/0dc23b6a0e4abc39904388dd3ffadcd1-Paper.pdf">
+              <b>Provably Good Batch Reinforcement Learning Without Great Exploration</b></a>,
+          Yao Liu, Adith Swaminathan, Alekh Agarwal, and Emma Brunskill, <i>NeurIPS 2020</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2019/file/db29450c3f5e97f97846693611f98c15-Paper.pdf">
+              <b>Convergent Policy Optimization for Safe Reinforcement Learning</b></a>,
+          Ming Yu, Zhuoran Yang, Mladen Kolar, and Zhaoran Wang, <i>NeurIPS 2019</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2019/file/3de568f8597b94bda53149c7d7f5958c-Paper.pdf">
+              <b>Learner-aware Teaching: Inverse Reinforcement Learning with Preferences and Constraints</b></a>,
+          Sebastian Tschiatschek, Ahana Ghosh, Luis Haug, Rati Devidze, and Adish Singla, <i>NeurIPS 2019</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2020/file/65ae450c5536606c266f49f1c08321f2-Paper.pdf">
+              <b>Security Analysis of Safe and Seldonian Reinforcement Learning Algorithm</b></a>,
+          A. Pinar Ozisik, and Philip S. Thomas, <i>NeurIPS 2020</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=S1vuO-bCW">
+              <b>Leave No Trace: Learning to Reset for Safe and Autonomous Reinforcement Learning</b></a>,
+          Benjamin Eysenbach, Shixiang Gu, Julian Ibarz, and Sergey Levine, <i>ICLR 2018</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=iaO86DUuKi">
+              <b>Conservative Safety Critics for Exploration</b></a>,
+          Homanga Bharadhwaj, Aviral Kumar, Nicholas Rhinehart, Sergey Levine, Florian Shkurti, and Animesh Garg, <i>ICLR 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="">
+              <b>Safe Reinforcement Learning Using Advantage-Based Intervention Nolan</b></a>,
+          Nolan Wagener, Byron Boots, and Ching-An Cheng <i>ICML 2021</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="http://proceedings.mlr.press/v139/yang21i/yang21i.pdf">
+              <b>Accelerating Safe Reinforcement Learning with Constraint-mismatched Baseline Policies</b></a>,
+          Tsung-Yen Yang, Justinian Rosca, Karthik Narasimhan,and Peter J. Ramadge, <i></i>
+      </li>
+
+      <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2019/file/c1aeb6517a1c7f33514f7ff69047e74e-Paper.pdf">
+              <b>Constrained Reinforcement Learning Has Zero Duality Gap</b></a>,
+          Santiago Paternain, Luiz F. O. Chamon, Miguel Calvo-Fullana and Alejandro Ribeiro, <i>NeurIPS 2019</i>
+      </li>
+
+      <% /* */ %>
+      <li>
+        <a href="https://openreview.net/pdf?id=TQt98Ya7UMP">
+            <b>Balancing Constraints and Rewards with Meta-gradient D4PG</b></a>,
+          Dan A. Calian, Daniel J. Mankowitz, Tom Zahavy, Zhongwen Xu, Junhyuk Oh, Nir Levine, and Timothy Mann, <i>ICLR 2021</i>
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf">
+              <b>Conservative Q-Learning for Offline Reinforcement Learning</b></a>,
+          Aviral Kumar, Aurick Zhou, George Tucker, Sergey Levine, <i>NeurIPS 2020)</i>
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://proceedings.mlr.press/v162/sootla22a/sootla22a.pdf">
+              <b>Sauté RL: Almost Surely Safe Reinforcement Learning Using State Augmentation</b></a>,
+          Aivar Sootla, Alexander I. Cowen-Rivers, Taher Jafferjee, Ziyan Wang, David Mguni,
+          Jun Wang, and Haitham Bou-Ammar, <i>ICML 2022 </i>
+      </li>
+
+        <% /* */ %>
+      <li>
+          <a href="https://openreview.net/pdf?id=ryxgJTEYDr">
+              <b>Reinforcement Learning with Competitive Ensembles of Information-Constrained Primitives</b></a>,
+          Anirudh Goyal, Shagun Sodhani, Jonathan Binas, Xue Bin Peng, Sergey Levine, and Yoshua Bengio, <i> ICLR 2020</i>
+      </li>
+
+        <li>
+        <a href="http://proceedings.mlr.press/v119/stooke20a/stooke20a.pdf">
+            <b>Density Constrained Reinforcement Learning</b></a>,
+          Zengyi Qin, Yuxiao Chen, and Chuchu Fan, <i>ICML 2021</i>
+      </li>
+
+    </ol>
+
+  </d-article>
+
+</body>

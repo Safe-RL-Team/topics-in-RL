@@ -1,0 +1,146 @@
+.subgrid {
+  grid-column: screen; 
+  display: grid; 
+  grid-template-columns: inherit;
+  grid-template-rows: inherit;
+  grid-column-gap: inherit;
+  grid-row-gap: inherit;
+}
+
+d-figure.base-grid {
+  grid-column: screen;
+  background: hsl(0, 0%, 97%);
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+d-figure {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+d-figure > figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+d-abstract {
+  grid-template-columns: none !important;
+}
+
+.shaded-figure {
+  background-color: hsl(0, 0%, 97%);
+  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+  padding: 30px 0;
+}
+
+.pointer {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 26px;
+  left: -48px;
+}
+
+/* table styling */
+
+.table {
+  overflow-x: scroll;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.table tbody th {
+  font-weight: initial;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.table tbody tr:last-of-type th {
+  border-bottom: inherit;
+}
+
+.table td,
+.table thead th {
+  text-align: center;
+}
+
+.table td {
+  border-color: rgb(242, 242, 242);
+}
+
+.table td.no {
+  background-color: #f6f6f6;
+}
+
+#article-title {
+  color: #525252;
+}
+
+/* make tables/figures horizontally scrollable */
+
+figure > div {
+  overflow-x: auto;
+}
+
+figure {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* image size and centering */
+
+.image {
+  margin: 0 auto;
+  max-width: 25em;
+}
+
+/* TOC */
+
+@media (min-width: 1000px) {
+  #main-article {
+    overflow-x: initial;
+  }
+  .toc-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #toc {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin-left: -10em;
+    margin-bottom: 12em;
+    top: 6em;
+    height: 0;
+    width: 6em;
+  }
+  .toc-line {
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 1px;
+    height: 12em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #abstract-text {
+    /* counteract bottom margin of the TOC */
+    margin-top: -12em;
+  }
+}
+
+* {
+  scroll-margin-top: 1em;
+  touch-action: manipulation;
+}
+
+.horizontal-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
