@@ -1,4 +1,4 @@
-🌟**This is a curated list of safe RL papers from 2017 to 2022. If you would like to contribute additional papers or update the list, please feel free to do so.**
+🌟 **This is a curated list of safe RL papers from 2017 to 2022. If you would like to contribute additional papers or update the list, please feel free to do so.**
 
 
 ## Our Journey of Reimplementing Safe RL Algorithms
